@@ -1,0 +1,33 @@
+{
+  "name": "burne",
+  "version": "0.0.0",
+  "description": "Marks the entity with special symbol.",
+  "main": "burne.deploy.js",
+  "support": "burne.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mark",
+    "entity",
+    "special",
+    "symbol",
+    "burne"
+  ],
+  "homepage": "https://github.com/volkovasystems/burne",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.19.0",
+    "impel": "^0.12.0",
+    "protype": "^0.21.0",
+    "wichevr": "^0.8.0",
+    "zelf": "^0.11.0"
+  }
+}
