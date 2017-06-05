@@ -50,8 +50,10 @@
 		{
 			"falzy": "falzy",
 			"impel": "impel",
+			"kein": "kein",
 			"protype": "protype",
 			"wichevr": "wichevr",
+			"xcavate": "xcavate",
 			"zelf": "zelf"
 		}
 	@end-include
@@ -59,8 +61,10 @@
 
 const falzy = require( "falzy" );
 const impel = require( "impel" );
+const kein = require( "kein" );
 const protype = require( "protype" );
 const wichevr = require( "wichevr" );
+const xcavate = require( "xcavate" );
 const zelf = require( "zelf" );
 
 const burne = function burne( marker, entity ){
@@ -72,17 +76,20 @@ const burne = function burne( marker, entity ){
 		"entity": "*"
 	*/
 
-	if( falzy( marker ) || !protype( marker, STRING + SYMBOL ) ){
+	if( falzy( marker ) || !protype( marker, NUMBER + STRING + SYMBOL ) ){
 		throw new Error( "invalid marker" );
 	}
 
-	if( protype( marker, STRING ) ){
+	if( !protype( marker, SYMBOL ) ){
 		marker = Symbol.for( marker );
 	}
 
 	entity = wichevr( entity, zelf( this ) );
 
-	impel( marker, marker, entity );
+	let mark = xcavate( marker, entity );
+	if( !kein( mark, entity ) && mark === marker ){
+		impel( marker, marker, entity );
+	}
 
 	return entity;
 };

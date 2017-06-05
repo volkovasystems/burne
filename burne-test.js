@@ -1,6 +1,18 @@
 
+const assert = require( "assert" );
 const burne = require( "./burne.js" );
-const util = require( "util" );
 
-let x = { };
-console.log( util.inspect( burne( Symbol( "hello" ), x ), { "showHidden": true } ) );
+let symbol = Symbol( "test" );
+let test = { };
+
+burne( symbol, test );
+
+assert.equal( test[ symbol ], symbol, "should be equal" );
+
+burne( "test", test );
+
+assert.equal( test[ Symbol.for( "test" ) ], undefined, "should be equal" );
+
+assert.equal( test[ symbol ], symbol, "should be equal" );
+
+console.log( "ok" );

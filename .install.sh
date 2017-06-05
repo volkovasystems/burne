@@ -2,8 +2,10 @@ yarn add \
 babel-runtime \
 falzy \
 impel \
+kein \
 protype \
 wichevr \
+xcavate \
 zelf \
 --save && \
 yarn add \
@@ -17,8 +19,10 @@ webpack \
 bower install \
 falzy \
 impel \
+kein \
 protype \
 wichevr \
+xcavate \
 zelf \
 --save \
 --force-latest

@@ -50,8 +50,10 @@
                                                                                                                                                                                                            		{
                                                                                                                                                                                                            			"falzy": "falzy",
                                                                                                                                                                                                            			"impel": "impel",
+                                                                                                                                                                                                           			"kein": "kein",
                                                                                                                                                                                                            			"protype": "protype",
                                                                                                                                                                                                            			"wichevr": "wichevr",
+                                                                                                                                                                                                           			"xcavate": "xcavate",
                                                                                                                                                                                                            			"zelf": "zelf"
                                                                                                                                                                                                            		}
                                                                                                                                                                                                            	@end-include
@@ -59,8 +61,10 @@
 
 var falzy = require("falzy");
 var impel = require("impel");
+var kein = require("kein");
 var protype = require("protype");
 var wichevr = require("wichevr");
+var xcavate = require("xcavate");
 var zelf = require("zelf");
 
 var burne = function burne(marker, entity) {
@@ -72,17 +76,20 @@ var burne = function burne(marker, entity) {
                                             	"entity": "*"
                                             */
 
-	if (falzy(marker) || !protype(marker, STRING + SYMBOL)) {
+	if (falzy(marker) || !protype(marker, NUMBER + STRING + SYMBOL)) {
 		throw new Error("invalid marker");
 	}
 
-	if (protype(marker, STRING)) {
+	if (!protype(marker, SYMBOL)) {
 		marker = (0, _for2.default)(marker);
 	}
 
 	entity = wichevr(entity, zelf(this));
 
-	impel(marker, marker, entity);
+	var mark = xcavate(marker, entity);
+	if (!kein(mark, entity) && mark === marker) {
+		impel(marker, marker, entity);
+	}
 
 	return entity;
 };
