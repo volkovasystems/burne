@@ -1,8 +1,37 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./burne.deploy.js">
-		</script>
+		<title>burne unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./burne.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "burne unit test", function( assert ) {
+
+				let symbol = Symbol( "test" );
+				let test = { };
+
+				burne( symbol, test );
+
+				assert.equal( test[ symbol ], symbol, "should be equal" );
+
+				burne( "test", test );
+
+				assert.equal( test[ Symbol.for( "test" ) ], undefined, "should be equal" );
+
+				assert.equal( test[ symbol ], symbol, "should be equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
