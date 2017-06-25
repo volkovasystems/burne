@@ -50,8 +50,9 @@
                                                                                                                                                                                                            		{
                                                                                                                                                                                                            			"falzy": "falzy",
                                                                                                                                                                                                            			"impel": "impel",
-                                                                                                                                                                                                           			"kein": "kein",
+                                                                                                                                                                                                           			"mrkd": "mrkd",
                                                                                                                                                                                                            			"protype": "protype",
+                                                                                                                                                                                                           			"transyl": "transyl",
                                                                                                                                                                                                            			"wichevr": "wichevr",
                                                                                                                                                                                                            			"xcavate": "xcavate",
                                                                                                                                                                                                            			"zelf": "zelf"
@@ -61,8 +62,9 @@
 
 var falzy = require("falzy");
 var impel = require("impel");
-var kein = require("kein");
+var mrkd = require("mrkd");
 var protype = require("protype");
+var transyl = require("transyl");
 var wichevr = require("wichevr");
 var xcavate = require("xcavate");
 var zelf = require("zelf");
@@ -87,7 +89,7 @@ var burne = function burne(marker, entity) {
 	entity = wichevr(entity, zelf(this));
 
 	var mark = xcavate(marker, entity);
-	if (!kein(mark, entity) && mark === marker) {
+	if (transyl(mark, marker) && !mrkd(mark, entity, true)) {
 		impel(marker, marker, entity);
 	}
 

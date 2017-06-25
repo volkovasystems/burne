@@ -1,6 +1,6 @@
 {
   "name": "burne",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Marks the entity with special symbol.",
   "main": "burne.deploy.js",
   "support": "burne.support.js",
@@ -27,8 +27,9 @@
   "dependencies": {
     "falzy": "^0.20.0",
     "impel": "^0.15.0",
-    "kein": "^0.26.0",
+    "mrkd": "^0.8.0",
     "protype": "^0.22.0",
+    "transyl": "^0.1.0",
     "wichevr": "^0.10.0",
     "xcavate": "^0.1.0",
     "zelf": "^0.12.0"

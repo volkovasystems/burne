@@ -50,8 +50,9 @@
 		{
 			"falzy": "falzy",
 			"impel": "impel",
-			"kein": "kein",
+			"mrkd": "mrkd",
 			"protype": "protype",
+			"transyl": "transyl",
 			"wichevr": "wichevr",
 			"xcavate": "xcavate",
 			"zelf": "zelf"
@@ -61,8 +62,9 @@
 
 const falzy = require( "falzy" );
 const impel = require( "impel" );
-const kein = require( "kein" );
+const mrkd = require( "mrkd" );
 const protype = require( "protype" );
+const transyl = require( "transyl" );
 const wichevr = require( "wichevr" );
 const xcavate = require( "xcavate" );
 const zelf = require( "zelf" );
@@ -87,7 +89,7 @@ const burne = function burne( marker, entity ){
 	entity = wichevr( entity, zelf( this ) );
 
 	let mark = xcavate( marker, entity );
-	if( !kein( mark, entity ) && mark === marker ){
+	if( transyl( mark, marker ) && !mrkd( mark, entity, true ) ){
 		impel( marker, marker, entity );
 	}
 

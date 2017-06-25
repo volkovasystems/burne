@@ -2,8 +2,9 @@ yarn add \
 babel-runtime \
 falzy \
 impel \
-kein \
+mrkd \
 protype \
+transyl \
 wichevr \
 xcavate \
 zelf \
@@ -19,8 +20,9 @@ webpack \
 bower install \
 falzy \
 impel \
-kein \
+mrkd \
 protype \
+transyl \
 wichevr \
 xcavate \
 zelf \
