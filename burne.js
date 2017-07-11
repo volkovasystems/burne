@@ -32,10 +32,11 @@
 			"file": "burne.js",
 			"module": "burne",
 			"author": "Richeve S. Bebedor",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-			],
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
+			],
 			"repository": "https://github.com/volkovasystems/burne.git",
 			"test": "burne-test.js",
 			"global": true
@@ -82,7 +83,7 @@ const burne = function burne( marker, entity ){
 		throw new Error( "invalid marker" );
 	}
 
-	if( !protype( marker, SYMBOL ) ){
+	if( typeof marker != SYMBOL ){
 		marker = Symbol.for( marker );
 	}
 
