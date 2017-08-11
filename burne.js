@@ -83,7 +83,7 @@ const burne = function burne( marker, entity ){
 		throw new Error( "invalid marker" );
 	}
 
-	if( typeof marker != SYMBOL ){
+	if( typeof marker != "symbol" ){
 		marker = Symbol.for( marker );
 	}
 
