@@ -1,53 +1,56 @@
 {
-  "name": "burne",
-  "version": "0.5.0",
-  "description": "Marks the entity with special symbol.",
-  "main": "burne.js",
-  "support": "burne.support.js",
-  "deploy": "burne.deploy.js",
-  "browser": "burne.deploy.js",
-  "scripts": {
-    "build": "babel burne.js --out-file burne.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha burne-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/burne.git"
-  },
-  "keywords": [
-    "mark",
-    "entity",
-    "special",
-    "symbol",
-    "burne"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/burne/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/burne#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "falzy": "^0.20.0",
-    "impel": "^0.17.0",
-    "mrkd": "^0.9.0",
-    "protype": "^0.22.0",
-    "transyl": "^0.2.0",
-    "wichevr": "^0.13.0",
-    "xcavate": "^0.2.0",
-    "zelf": "^0.12.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.1.0"
-  }
+	"name": "burne",
+	"version": "0.6.0",
+	"description": "Marks the entity with special symbol.",
+	"main": "burne.js",
+	"support": "burne.support.js",
+	"deploy": "burne.deploy.js",
+	"browser": "burne.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"build": "babel burne.js --out-file burne.support.js --source-maps && webpack --progress --display-modules",
+		"pretest": "npm run clear && npm run build",
+		"test": "node burne-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/burne.git"
+	},
+	"keywords": [
+		"mark",
+		"entity",
+		"special",
+		"symbol",
+		"burne"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/burne/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/burne#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"falzy": "^0.23.0",
+		"impel": "^0.18.0",
+		"mrkd": "^0.11.0",
+		"protype": "^0.24.0",
+		"transyl": "^0.4.0",
+		"wichevr": "^0.14.0",
+		"xcavate": "^0.4.0",
+		"zelf": "^0.14.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.5.3"
+	}
 }

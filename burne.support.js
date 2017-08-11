@@ -83,7 +83,7 @@ var burne = function burne(marker, entity) {
 		throw new Error("invalid marker");
 	}
 
-	if ((typeof marker === "undefined" ? "undefined" : (0, _typeof3.default)(marker)) != SYMBOL) {
+	if ((typeof marker === "undefined" ? "undefined" : (0, _typeof3.default)(marker)) != "symbol") {
 		marker = (0, _for2.default)(marker);
 	}
 
