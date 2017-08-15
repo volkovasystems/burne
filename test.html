@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>burne unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:burne</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./burne.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "burne unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				let symbol = Symbol( "test" );
-				let test = { };
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				burne( symbol, test );
-
-				assert.equal( test[ symbol ], symbol, "should be equal to Symbol( 'test' )" );
-
-				burne( "test", test );
-
-				assert.equal( test[ Symbol.for( "test" ) ], undefined, "should be equal to undefined" );
-
-				assert.equal( test[ symbol ], symbol, "should be equal to Symbol( 'test' )" );
-
-				let Hello = function Hello( ){ };
-				let symbol2 = Symbol.for( "extensive" );
-				burne( symbol2, Hello );
-
-				assert.equal( Hello[ symbol2 ], symbol2, "should be equal to Symbol.for( 'extensive' )" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>

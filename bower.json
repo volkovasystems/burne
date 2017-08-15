@@ -1,38 +1,28 @@
 {
-  "name": "burne",
-  "version": "0.6.0",
-  "description": "Marks the entity with special symbol.",
-  "main": "burne.deploy.js",
-  "support": "burne.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "mark",
-    "entity",
-    "special",
-    "symbol",
-    "burne"
-  ],
-  "homepage": "https://github.com/volkovasystems/burne",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.23.0",
-    "impel": "^0.18.0",
-    "mrkd": "^0.11.0",
-    "protype": "^0.24.0",
-    "transyl": "^0.4.0",
-    "wichevr": "^0.14.0",
-    "xcavate": "^0.4.0",
-    "zelf": "^0.14.0"
-  }
+	"name": "burne",
+	"version": "0.6.0",
+	"description": "Marks the entity with special symbol.",
+	"main": "burne.deploy.js",
+	"support": "burne.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"mark",
+		"entity",
+		"special",
+		"symbol",
+		"burne"
+	],
+	"homepage": "https://github.com/volkovasystems/burne",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
