@@ -192,7 +192,7 @@ describe( "burne", ( ) => {
 		} );
 
 	} );
-	
+
 } );
 
 //: @end-client
@@ -201,6 +201,112 @@ describe( "burne", ( ) => {
 //: @bridge:
 
 describe( "burne", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`burne( Symbol( 'test' ), { } )`", ( ) => {
+		it( "should be equal to Symbol( 'test' )", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let symbol = Symbol( "test" );
+					let test = { };
+
+					burne( symbol, test );
+
+					return test[ symbol ].toString( );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "Symbol(test)" );
+
+		} );
+	} );
+
+
+	describe( "`burne with string type marker`", ( ) => {
+
+		it( "should return Symbol( 'test' ) for Symbol( 'test' ) property", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let symbol = Symbol( "test" );
+					let test = { };
+
+					burne( symbol, test );
+
+					burne( "test", test );
+
+					return test[ symbol ].toString( );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "Symbol(test)" );
+
+		} );
+
+		it( "should return undefined for Symbol.for( 'test' ) property", ( ) => {
+
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let symbol = Symbol( "test" );
+					let test = { };
+
+					burne( symbol, test );
+
+					burne( "test", test );
+
+					return test[ Symbol.for( "test" ) ];
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, undefined );
+
+		} );
+
+	} );
+
+
+	describe( "`burne with Symbol type marker and function type entity`", ( ) => {
+
+		it( "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value", ( ) => {
+
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let Hello = function Hello( ){ };
+					let symbol2 = Symbol.for( "extensive" );
+					burne( symbol2, Hello );
+					return Hello[ symbol2 ].toString( );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "Symbol(extensive)" );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-bridge
