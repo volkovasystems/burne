@@ -1,16 +1,74 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-15T07:34:18.770Z",
-    "end": "2017-08-15T07:34:18.770Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 4,
+		"tests": 4,
+		"passes": 4,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-16T12:47:19.449Z",
+		"end": "2017-08-16T12:47:19.462Z",
+		"duration": 13
+	},
+	"tests": [
+		{
+			"title": "should be equal to Symbol( 'test' )",
+			"fullTitle": "burne `burne( Symbol( 'test' ), { } )` should be equal to Symbol( 'test' )",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return Symbol( 'test' ) for Symbol( 'test' ) property",
+			"fullTitle": "burne `burne with string type marker` should return Symbol( 'test' ) for Symbol( 'test' ) property",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return undefined for Symbol.for( 'test' ) property",
+			"fullTitle": "burne `burne with string type marker` should return undefined for Symbol.for( 'test' ) property",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value",
+			"fullTitle": "burne `burne with Symbol type marker and function type entity` should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to Symbol( 'test' )",
+			"fullTitle": "burne `burne( Symbol( 'test' ), { } )` should be equal to Symbol( 'test' )",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return Symbol( 'test' ) for Symbol( 'test' ) property",
+			"fullTitle": "burne `burne with string type marker` should return Symbol( 'test' ) for Symbol( 'test' ) property",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return undefined for Symbol.for( 'test' ) property",
+			"fullTitle": "burne `burne with string type marker` should return undefined for Symbol.for( 'test' ) property",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value",
+			"fullTitle": "burne `burne with Symbol type marker and function type entity` should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

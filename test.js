@@ -66,6 +66,63 @@ const burne = require( "./burne.js" );
 
 describe( "burne", ( ) => {
 
+	describe( "`burne( Symbol( 'test' ), { } )`", ( ) => {
+		it( "should be equal to Symbol( 'test' )", ( ) => {
+
+			let symbol = Symbol( "test" );
+			let test = { };
+
+			burne( symbol, test );
+
+			assert.equal( test[ symbol ], symbol );
+
+		} );
+	} );
+
+	describe( "`burne with string type marker`", ( ) => {
+
+		it( "should return Symbol( 'test' ) for Symbol( 'test' ) property", ( ) => {
+
+			let symbol = Symbol( "test" );
+			let test = { };
+
+			burne( symbol, test );
+
+			burne( "test", test );
+
+			assert.equal( test[ symbol ], symbol );
+
+		} );
+
+		it( "should return undefined for Symbol.for( 'test' ) property", ( ) => {
+
+			let symbol = Symbol( "test" );
+			let test = { };
+
+			burne( symbol, test );
+
+			burne( "test", test );
+
+			assert.equal( test[ Symbol.for( "test" ) ], undefined );
+
+		} );
+
+	} );
+
+	describe( "`burne with Symbol type marker and function type entity`", ( ) => {
+
+		it( "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value", ( ) => {
+
+			let Hello = function Hello( ){ };
+			let symbol2 = Symbol.for( "extensive" );
+			burne( symbol2, Hello );
+
+			assert.equal( Hello[ symbol2 ], symbol2 );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-server

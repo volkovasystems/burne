@@ -1,0 +1,171 @@
+{
+	"state": {
+		"passed": 4,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-16T12:47:20.728Z",
+	"end": "2017-08-16T12:48:13.406Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "burne",
+			"duration": 0,
+			"start": "2017-08-16T12:48:12.960Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "burne",
+			"duration": 269,
+			"start": "2017-08-16T12:48:12.960Z",
+			"end": "2017-08-16T12:48:13.229Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-16T12:48:12.962Z",
+					"end": "2017-08-16T12:48:12.962Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should be equal to Symbol( 'test' )"
+				},
+				{
+					"start": "2017-08-16T12:48:13.088Z",
+					"end": "2017-08-16T12:48:13.088Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should be equal to Symbol( 'test' )"
+				},
+				{
+					"start": "2017-08-16T12:48:13.089Z",
+					"end": "2017-08-16T12:48:13.089Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return Symbol( 'test' ) for Symbol( 'test' ) property"
+				},
+				{
+					"start": "2017-08-16T12:48:13.137Z",
+					"end": "2017-08-16T12:48:13.137Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return Symbol( 'test' ) for Symbol( 'test' ) property"
+				},
+				{
+					"start": "2017-08-16T12:48:13.137Z",
+					"end": "2017-08-16T12:48:13.137Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return undefined for Symbol.for( 'test' ) property"
+				},
+				{
+					"start": "2017-08-16T12:48:13.184Z",
+					"end": "2017-08-16T12:48:13.184Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return undefined for Symbol.for( 'test' ) property"
+				},
+				{
+					"start": "2017-08-16T12:48:13.185Z",
+					"end": "2017-08-16T12:48:13.185Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value"
+				},
+				{
+					"start": "2017-08-16T12:48:13.229Z",
+					"end": "2017-08-16T12:48:13.229Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value"
+				},
+				{
+					"start": "2017-08-16T12:48:13.229Z",
+					"end": "2017-08-16T12:48:13.230Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "burne"
+				}
+			]
+		},
+		{
+			"name": "`burne( Symbol( 'test' ), { } )`",
+			"duration": 128,
+			"start": "2017-08-16T12:48:12.961Z",
+			"end": "2017-08-16T12:48:13.089Z",
+			"tests": [
+				{
+					"name": "should be equal to Symbol( 'test' )",
+					"start": "2017-08-16T12:48:12.961Z",
+					"end": "2017-08-16T12:48:13.088Z",
+					"duration": 127,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`burne with string type marker`",
+			"duration": 95,
+			"start": "2017-08-16T12:48:13.089Z",
+			"end": "2017-08-16T12:48:13.184Z",
+			"tests": [
+				{
+					"name": "should return Symbol( 'test' ) for Symbol( 'test' ) property",
+					"start": "2017-08-16T12:48:13.089Z",
+					"end": "2017-08-16T12:48:13.137Z",
+					"duration": 48,
+					"state": "pass"
+				},
+				{
+					"name": "should return undefined for Symbol.for( 'test' ) property",
+					"start": "2017-08-16T12:48:13.137Z",
+					"end": "2017-08-16T12:48:13.184Z",
+					"duration": 47,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`burne with Symbol type marker and function type entity`",
+			"duration": 44,
+			"start": "2017-08-16T12:48:13.185Z",
+			"end": "2017-08-16T12:48:13.229Z",
+			"tests": [
+				{
+					"name": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value",
+					"start": "2017-08-16T12:48:13.185Z",
+					"end": "2017-08-16T12:48:13.229Z",
+					"duration": 44,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
