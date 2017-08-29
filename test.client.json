@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-16T12:47:20.728Z",
-	"end": "2017-08-16T12:48:13.406Z",
+	"start": "2017-08-29T03:25:15.519Z",
+	"end": "2017-08-29T03:26:02.677Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,85 +28,85 @@
 		{
 			"name": "burne",
 			"duration": 0,
-			"start": "2017-08-16T12:48:12.960Z",
+			"start": "2017-08-29T03:26:02.179Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "burne",
-			"duration": 269,
-			"start": "2017-08-16T12:48:12.960Z",
-			"end": "2017-08-16T12:48:13.229Z",
+			"duration": 317,
+			"start": "2017-08-29T03:26:02.180Z",
+			"end": "2017-08-29T03:26:02.497Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-16T12:48:12.962Z",
-					"end": "2017-08-16T12:48:12.962Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should be equal to Symbol( 'test' )"
-				},
-				{
-					"start": "2017-08-16T12:48:13.088Z",
-					"end": "2017-08-16T12:48:13.088Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should be equal to Symbol( 'test' )"
-				},
-				{
-					"start": "2017-08-16T12:48:13.089Z",
-					"end": "2017-08-16T12:48:13.089Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should return Symbol( 'test' ) for Symbol( 'test' ) property"
-				},
-				{
-					"start": "2017-08-16T12:48:13.137Z",
-					"end": "2017-08-16T12:48:13.137Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should return Symbol( 'test' ) for Symbol( 'test' ) property"
-				},
-				{
-					"start": "2017-08-16T12:48:13.137Z",
-					"end": "2017-08-16T12:48:13.137Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should return undefined for Symbol.for( 'test' ) property"
-				},
-				{
-					"start": "2017-08-16T12:48:13.184Z",
-					"end": "2017-08-16T12:48:13.184Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should return undefined for Symbol.for( 'test' ) property"
-				},
-				{
-					"start": "2017-08-16T12:48:13.185Z",
-					"end": "2017-08-16T12:48:13.185Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value"
-				},
-				{
-					"start": "2017-08-16T12:48:13.229Z",
-					"end": "2017-08-16T12:48:13.229Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "burne",
-					"associatedTest": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value"
-				},
-				{
-					"start": "2017-08-16T12:48:13.229Z",
-					"end": "2017-08-16T12:48:13.230Z",
+					"start": "2017-08-29T03:26:02.181Z",
+					"end": "2017-08-29T03:26:02.182Z",
 					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should be equal to Symbol( 'test' )"
+				},
+				{
+					"start": "2017-08-29T03:26:02.317Z",
+					"end": "2017-08-29T03:26:02.317Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should be equal to Symbol( 'test' )"
+				},
+				{
+					"start": "2017-08-29T03:26:02.318Z",
+					"end": "2017-08-29T03:26:02.318Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return Symbol( 'test' ) for Symbol( 'test' ) property"
+				},
+				{
+					"start": "2017-08-29T03:26:02.375Z",
+					"end": "2017-08-29T03:26:02.376Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return Symbol( 'test' ) for Symbol( 'test' ) property"
+				},
+				{
+					"start": "2017-08-29T03:26:02.376Z",
+					"end": "2017-08-29T03:26:02.378Z",
+					"duration": 2,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return undefined for Symbol.for( 'test' ) property"
+				},
+				{
+					"start": "2017-08-29T03:26:02.436Z",
+					"end": "2017-08-29T03:26:02.437Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should return undefined for Symbol.for( 'test' ) property"
+				},
+				{
+					"start": "2017-08-29T03:26:02.437Z",
+					"end": "2017-08-29T03:26:02.437Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value"
+				},
+				{
+					"start": "2017-08-29T03:26:02.496Z",
+					"end": "2017-08-29T03:26:02.496Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "burne",
+					"associatedTest": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value"
+				},
+				{
+					"start": "2017-08-29T03:26:02.497Z",
+					"end": "2017-08-29T03:26:02.497Z",
+					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "burne"
 				}
@@ -114,15 +114,15 @@
 		},
 		{
 			"name": "`burne( Symbol( 'test' ), { } )`",
-			"duration": 128,
-			"start": "2017-08-16T12:48:12.961Z",
-			"end": "2017-08-16T12:48:13.089Z",
+			"duration": 136,
+			"start": "2017-08-29T03:26:02.181Z",
+			"end": "2017-08-29T03:26:02.317Z",
 			"tests": [
 				{
 					"name": "should be equal to Symbol( 'test' )",
-					"start": "2017-08-16T12:48:12.961Z",
-					"end": "2017-08-16T12:48:13.088Z",
-					"duration": 127,
+					"start": "2017-08-29T03:26:02.181Z",
+					"end": "2017-08-29T03:26:02.316Z",
+					"duration": 135,
 					"state": "pass"
 				}
 			],
@@ -130,22 +130,22 @@
 		},
 		{
 			"name": "`burne with string type marker`",
-			"duration": 95,
-			"start": "2017-08-16T12:48:13.089Z",
-			"end": "2017-08-16T12:48:13.184Z",
+			"duration": 119,
+			"start": "2017-08-29T03:26:02.318Z",
+			"end": "2017-08-29T03:26:02.437Z",
 			"tests": [
 				{
 					"name": "should return Symbol( 'test' ) for Symbol( 'test' ) property",
-					"start": "2017-08-16T12:48:13.089Z",
-					"end": "2017-08-16T12:48:13.137Z",
-					"duration": 48,
+					"start": "2017-08-29T03:26:02.318Z",
+					"end": "2017-08-29T03:26:02.375Z",
+					"duration": 57,
 					"state": "pass"
 				},
 				{
 					"name": "should return undefined for Symbol.for( 'test' ) property",
-					"start": "2017-08-16T12:48:13.137Z",
-					"end": "2017-08-16T12:48:13.184Z",
-					"duration": 47,
+					"start": "2017-08-29T03:26:02.376Z",
+					"end": "2017-08-29T03:26:02.436Z",
+					"duration": 60,
 					"state": "pass"
 				}
 			],
@@ -153,15 +153,15 @@
 		},
 		{
 			"name": "`burne with Symbol type marker and function type entity`",
-			"duration": 44,
-			"start": "2017-08-16T12:48:13.185Z",
-			"end": "2017-08-16T12:48:13.229Z",
+			"duration": 60,
+			"start": "2017-08-29T03:26:02.437Z",
+			"end": "2017-08-29T03:26:02.497Z",
 			"tests": [
 				{
 					"name": "should contain Symbol.for( 'extensive' ) property with Symbol.for( 'extensive' ) value",
-					"start": "2017-08-16T12:48:13.185Z",
-					"end": "2017-08-16T12:48:13.229Z",
-					"duration": 44,
+					"start": "2017-08-29T03:26:02.437Z",
+					"end": "2017-08-29T03:26:02.496Z",
+					"duration": 59,
 					"state": "pass"
 				}
 			],
